@@ -7,7 +7,7 @@
 
 <p>
   <strong>Face:</strong>
-  <%= @person.face %>
+  <%= image_tag @person.face_url %>
 </p>
 
 <%= link_to 'Edit', edit_person_path(@person) %> |
