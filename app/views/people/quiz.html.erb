@@ -2,7 +2,7 @@
 
 <p>
   <strong>Face:</strong>
-  <%= image_tag @person.face_url %>
+  <%= image_tag @person.face.standard.url %>
 </p>
 
 <%= link_to 'Next', quiz_people_path %> |
