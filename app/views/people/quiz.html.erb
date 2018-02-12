@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Face:</strong>
+  <%= image_tag @person.face_url %>
+</p>
+
+<%= link_to 'Next', quiz_people_path %> |
+<%= link_to 'Back', people_path %>

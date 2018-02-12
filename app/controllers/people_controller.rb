@@ -61,9 +61,9 @@ class PeopleController < ApplicationController
     end
   end
 
-  def random
+  # GET /people/quiz
+  def quiz
     @person = Person.order("RANDOM()").first
-    render template: "people/show"
   end
 
   private
