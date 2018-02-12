@@ -1,12 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h1>People</h1>
+<h1>NameFace</h1>
+<p><i>A web app for memorizing names</i></p>
+
+<br>
+
+<h2>List of People</h2>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
-      <th>Face</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,7 +19,6 @@
     <% @people.each do |person| %>
       <tr>
         <td><%= person.name %></td>
-        <td><%= person.face %></td>
         <td><%= link_to 'Show', person %></td>
         <td><%= link_to 'Edit', edit_person_path(person) %></td>
         <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
