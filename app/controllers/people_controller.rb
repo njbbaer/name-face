@@ -61,6 +61,11 @@ class PeopleController < ApplicationController
     end
   end
 
+  def random
+    @person = Person.order("RANDOM()").first
+    render template: "people/show"
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_person
