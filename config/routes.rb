@@ -4,5 +4,5 @@ Rails.application.routes.draw do
       get 'quiz'
     end
   end
-  root 'people#index'
+  root 'welcome#index'
 end
