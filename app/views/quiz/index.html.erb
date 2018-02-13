@@ -1,9 +1,9 @@
-<p id="notice"><%= notice %></p>
+<h2>Quiz</h2>
 
 <p>
   <strong>Face:</strong>
   <%= image_tag @person.face.standard.url %>
 </p>
 
-<%= link_to 'Next', quiz_path %> |
-<%= link_to 'Home', root_path %>
+<%= link_to 'Correct', quiz_path %> |
+<%= link_to 'Incorrect', quiz_path %>
