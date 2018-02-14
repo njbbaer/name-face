@@ -5,3 +5,12 @@
 @name_button = ->
     nameButton.style.display = "none"
     hiddenName.style.display = "inline"
+
+Mousetrap.bind 'left', ->
+    nameButton.click()
+
+Mousetrap.bind 'up', ->
+    correctButton.click()
+
+Mousetrap.bind 'down', ->
+    incorrectButton.click()

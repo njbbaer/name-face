@@ -13,7 +13,9 @@
 
 <table>
   <tr>
-    <td><%= button_to 'Correct', quiz_path %></td>
-    <td><%= button_to 'Incorrect', quiz_path %></td>
+    <td><%= button_to 'Correct', quiz_path, { :id => "correctButton" }  %></td>
+    <td><%= button_to 'Incorrect', quiz_path, { :id => "incorrectButton" }  %></td>
   </tr>
 </table>
+
+<p>&larr; Reveal &uarr; Correct &darr; Incorrect</p>
