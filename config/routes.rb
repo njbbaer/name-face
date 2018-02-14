@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'welcome#index'
   resources :people
-  get 'quiz', to: 'quiz#index'
+  get 'quiz' => 'quiz#index'
+  post 'quiz' => 'quiz#index'
 end
