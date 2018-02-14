@@ -5,5 +5,11 @@
   <%= image_tag @person.face.standard.url %>
 </p>
 
+<p>
+  <strong>Name:</strong>
+  <button onclick="name_button()" id="nameButton">Reveal Name</button>
+  <span id="hiddenName" style="display: none"><%= @person.name %></span>
+</p>
+
 <%= link_to 'Correct', quiz_path %> |
 <%= link_to 'Incorrect', quiz_path %>
